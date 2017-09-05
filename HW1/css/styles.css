@@ -1,0 +1,17 @@
+body {
+    font-size: 125%;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+#languagePicture {
+    float:left;
+}
+
+#bodyText {
+    float:left;
+    color:red;
+}
+
