@@ -1,12 +1,13 @@
 body {
-    font-size: 125%;
+    font-size: 110%;
+    background-color: lime;
 }
 
 header, main, nav, footer {
     text-align: center;
 }
 
-#languagePicture {
+#languagePicture, #performancePicture, #historyPicture, #bookPicture {
     float:left;
 }
 
@@ -15,3 +16,77 @@ header, main, nav, footer {
     color:red;
 }
 
+footer {
+    clear:both;
+}
+
+#menu {
+    background: #ADD8E6;
+    padding: 10px 0px;
+}
+
+nav a { /*links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white;          /* by default, links are blue */
+}
+
+nav a:hover { /*pseudo class*/
+    border-bottom:2px green solid;
+    transition: .9s; /* transition effect */
+}
+
+current_page_text {
+    font-style:italic;
+    font-weight:bold;
+}
+
+ul {
+    float:left;
+    background:	#00FFFF;
+    text-align: left;
+}
+
+.trait {
+    color:yellow;
+}
+
+.aboutTrait {
+    color:red;
+}
+
+/*clear hyperlink color*/
+a { color: inherit; }
+
+#resourcePageText, #historyText {
+    float:left;
+    text-align: left;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.underlinedText {
+   text-decoration: underline;
+}
+
+.C {
+    color: blue;
+}
+
+.highlight {
+    background-color:yellow;
+}
+
+.super {
+    vertical-align: super;
+    font-size: 150%;
+}
+
+.sub {
+    vertical-align: sub;
+    font-size: 150%;
+}
