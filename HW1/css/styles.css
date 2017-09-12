@@ -38,7 +38,7 @@ nav a:hover { /*pseudo class*/
     transition: .9s; /* transition effect */
 }
 
-current_page_text {
+.current_page_text {
     font-style:italic;
     font-weight:bold;
 }
@@ -89,4 +89,8 @@ h1 {
 .sub {
     vertical-align: sub;
     font-size: 150%;
+}
+
+.bold {
+    font-weight:bold;
 }
