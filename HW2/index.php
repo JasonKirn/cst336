@@ -19,7 +19,7 @@ include 'functions.php';
         </header>
         
         <figure id="dice">
-            <img src="images/dice.jpg" alt="Picture of 100 sided dice" />
+            <img src="images/dice.jpg" alt="Picture of 100 sided dice"/>
         </figure>
         
         <?php
