@@ -42,7 +42,7 @@
         //2nd boolean used for the case of high roll and lucky number being obtained.
         $eventBool2 = 0;
         echo "<br><br>";
-        echo "<div id='largetext'>";
+        echo "<div id='largetext2'>";
         echo "<div id='italisize'>";
         echo "You rolled ";
         echo "</div>";
