@@ -1,0 +1,10 @@
+[28-Sep-2017 00:27:44 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/Lab4/Slider/index.php on line 50
+[28-Sep-2017 00:27:44 UTC] PHP Stack trace:
+[28-Sep-2017 00:27:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab4/Slider/index.php:0
+[28-Sep-2017 22:24:20 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/Lab4/Slider/index.php on line 48
+[28-Sep-2017 22:24:20 UTC] PHP Stack trace:
+[28-Sep-2017 22:24:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab4/Slider/index.php:0
+[28-Sep-2017 22:24:20 UTC] PHP   2. rand() /home/ubuntu/workspace/cst336/Lab4/Slider/index.php:48
+[28-Sep-2017 23:05:59 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/cst336/Lab4/Slider/index.php on line 48
+[28-Sep-2017 23:05:59 UTC] PHP Stack trace:
+[28-Sep-2017 23:05:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab4/Slider/index.php:0

@@ -1,0 +1,1 @@
+Type your directory you wish to go to in the top bar.
