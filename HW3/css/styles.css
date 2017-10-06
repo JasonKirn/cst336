@@ -1,0 +1,91 @@
+body {
+    font-size: 110%;
+    background-color: #D3D3D3;
+}
+
+#required-field {
+    color: red;
+    font-size: 70%;
+}
+
+h1 {
+    color: red;
+}
+
+#bold {
+    font-weight:bold;
+}
+
+#mario-color {
+    background-color:red;
+}
+
+#luigi-color {
+    background-color:green;
+}
+
+#link-color {
+    background-color:lightgreen;
+}
+
+#kirby-color {
+    background-color:pink;
+}
+
+#mario-text {
+    color:red;
+    font-size: 120%
+}
+
+#luigi-text {
+    color:green;
+    font-size: 120%
+}
+
+#link-text {
+    color:green;
+    font-size: 120%
+}
+
+#kirby-text {
+    color:pink;
+    font-size: 120%
+}
+
+#photo1, #photo2, #photo3, #photo4 {
+    size: 150%;
+}
+
+footer {
+    font-size:130%;
+}
+
+#question-text {
+    font-size:130%;
+    text-decoration:underline;
+}
+
+.answer-text {
+    font-size:90%;
+    font-weight:bold;
+}
+
+#logo {
+    max-width:170px;
+    max-height:65px;
+    width: auto;
+    height: auto;
+}
+
+fieldset {
+    border: 0;
+}
+
+#submit {
+    width: 20em;  height: 5em;
+}
+
+.text-box-text {
+    font-size: 110%;
+}
+

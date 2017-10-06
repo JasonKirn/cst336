@@ -29,3 +29,4 @@
 [24-Sep-2017 02:06:46 UTC] PHP Fatal error:  Call to undefined function generateLuckyNumbersArray() in /home/ubuntu/workspace/cst336/HW2/index.php on line 9
 [24-Sep-2017 02:06:46 UTC] PHP Stack trace:
 [24-Sep-2017 02:06:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/HW2/index.php:0
+[05-Oct-2017 04:42:06 UTC] PHP Fatal error:  Call-time pass-by-reference has been removed in /home/ubuntu/workspace/cst336/HW3/index.php on line 125
