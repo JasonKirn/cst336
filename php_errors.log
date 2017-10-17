@@ -30,3 +30,41 @@
 [24-Sep-2017 02:06:46 UTC] PHP Stack trace:
 [24-Sep-2017 02:06:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/HW2/index.php:0
 [05-Oct-2017 04:42:06 UTC] PHP Fatal error:  Call-time pass-by-reference has been removed in /home/ubuntu/workspace/cst336/HW3/index.php on line 125
+[13-Oct-2017 22:55:25 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst336/Lab5/index.php on line 12
+[13-Oct-2017 22:55:25 UTC] PHP Stack trace:
+[13-Oct-2017 22:55:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[13-Oct-2017 22:55:25 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:12
+[13-Oct-2017 22:55:25 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst336/Lab5/index.php on line 12
+[13-Oct-2017 22:55:25 UTC] PHP Stack trace:
+[13-Oct-2017 22:55:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[13-Oct-2017 22:55:25 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:12
+[14-Oct-2017 00:13:22 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'uuts'@'localhost' (using password: YES) in /home/ubuntu/workspace/cst336/Lab5/index.php on line 17
+[14-Oct-2017 00:13:22 UTC] PHP Stack trace:
+[14-Oct-2017 00:13:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[14-Oct-2017 00:13:22 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:17
+[14-Oct-2017 00:15:00 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'uuts'@'localhost' (using password: YES) in /home/ubuntu/workspace/cst336/Lab5/index.php on line 17
+[14-Oct-2017 00:15:00 UTC] PHP Stack trace:
+[14-Oct-2017 00:15:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[14-Oct-2017 00:15:00 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:17
+[14-Oct-2017 00:15:44 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst336/Lab5/index.php on line 18
+[14-Oct-2017 00:15:44 UTC] PHP Stack trace:
+[14-Oct-2017 00:15:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[14-Oct-2017 00:15:44 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:18
+[14-Oct-2017 00:15:44 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst336/Lab5/index.php on line 18
+[14-Oct-2017 00:15:44 UTC] PHP Stack trace:
+[14-Oct-2017 00:15:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[14-Oct-2017 00:15:44 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:18
+[14-Oct-2017 00:22:09 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/cst336/Lab5/index.php on line 28
+[14-Oct-2017 00:22:09 UTC] PHP Stack trace:
+[14-Oct-2017 00:22:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[14-Oct-2017 00:25:45 UTC] PHP Warning:  mysqli::mysqli(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst336/Lab5/index.php on line 18
+[14-Oct-2017 00:25:45 UTC] PHP Stack trace:
+[14-Oct-2017 00:25:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[14-Oct-2017 00:25:45 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:18
+[14-Oct-2017 00:25:45 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/cst336/Lab5/index.php on line 18
+[14-Oct-2017 00:25:45 UTC] PHP Stack trace:
+[14-Oct-2017 00:25:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
+[14-Oct-2017 00:25:45 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/cst336/Lab5/index.php:18
+[16-Oct-2017 21:23:40 UTC] PHP Fatal error:  Call to undefined method mysqli_result::fetchoc() in /home/ubuntu/workspace/cst336/Lab5/index.php on line 84
+[16-Oct-2017 21:23:40 UTC] PHP Stack trace:
+[16-Oct-2017 21:23:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab5/index.php:0
