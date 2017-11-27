@@ -6,13 +6,9 @@ var max = 100;
 function generateLuckyNumArray() {
     for (var i = 0; i < 5; i++) {
         var randomNum = Math.ceil(Math.random() * (max - min) + min);
-        //console.log(randomNum);
         
         luckyNumArray[i] = randomNum + " ";
         console.log(luckyNumArray[i]);
-        /*$(".rollBtn").on("click", function() {
-            $("luckyNumText").append(randomNum + " ");
-        })*/
     }
 }
 
@@ -41,9 +37,8 @@ function startApplication() {
     generateLuckyNumArray();
     diceRoll();
     displayPictures();
-    //$("#showLuckyNums").remove();
+    
     $("#luckyNumText").append("<p id='showLuckyNums'>" + luckyNumArray + "</p>");
-    //$("#showRolledNum").remove();
     $("#resultText").append("<p id='showRolledNum'>" + rolledNum + "</p>");
     
     $(".rollBtn").on("click", function() {
@@ -51,7 +46,6 @@ function startApplication() {
         
         //Recursive setup causes lag after a while and other issues, so going with location.reload
         //startApplication();
-        //$("#resultText").append(rolledNum);  
         console.log("roll pressed");
         console.log(rolledNum);
     })
