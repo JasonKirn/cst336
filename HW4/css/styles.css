@@ -1,0 +1,71 @@
+header, main, nav, footer {
+    text-align: center;
+}
+
+#bodyText, #dice {
+    float:left;
+    color:white;
+}
+
+#eventImage, #eventImage2 {
+    float: right;
+}
+
+body {
+    background-color:black;
+    color:green;
+    font-size:150%;
+}
+
+#largetext, #largetext2 {
+    font-size: 150%;
+}
+
+#underline {
+    text-decoration:underline;    
+}
+
+.bold {
+    font-weight:bold;
+}
+
+footer {
+    clear: left;
+    clear: right;
+    font-size:75%;
+    color:red;
+}
+
+#content {
+    color:white;
+}
+
+#italisize {
+    text-decoration:italic;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom:0px;
+    color:white;
+}
+
+#rainbowShadow {
+    text-shadow: 3px 0 0 rgb(217,31,38) , 6px 0 0 rgb(226,91,14) , 
+    9px 0 0 rgb(245,221,8) , 12px 0 0 rgb(5,148,68) , 15px 0 0 rgb(2,135,206) , 
+    18px 0 0 rgb(4,77,145) , 21px 0 0 rgb(42,21,113);
+    font-size:200%;
+}
+
+#orangeText {
+    color:orange;
+}
+
+#tryAgainImage {
+    float: right;
+}
+
+#shadowText {
+    text-shadow: 2px 2px #FF0000;
+}
