@@ -42,30 +42,30 @@
         }
         
         function getCountyInfo() {
-            alert("select state changed. Value: " + $("#stateList").val()); 
+            //alert("select state changed. Value: " + $("#stateList").val()); 
             $.ajax({
 
-            type: "GET",
-            url: "http://hosting.otterlabs.org/laramiguel/ajax/countyList.php?state=ca",
-            dataType: "json",
-            data: { 
-                "state": $("#stateList").val() 
-            },
-            success: function(data,status) {
-                //acts to remove previous appends
-                $("#county-list").html("");
-                for (var i = 0; i < data.counties.length; i++) {
-                    $("#county-list").append("<option>" + data.counties[i].county + "</option>");
+                type: "GET",
+                url: "http://hosting.otterlabs.org/laramiguel/ajax/countyList.php?state=ca",
+                dataType: "json",
+                data: { 
+                    "state": $("#stateList").val() 
+                },
+                success: function(data,status) {
+                    //acts to remove previous appends
+                    $("#county-list").html("");
+                    for (var i = 0; i < data.counties.length; i++) {
+                        $("#county-list").append("<option>" + data.counties[i].county + "</option>");
+                    }
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                    //alert(status);
                 }
-            },
-            complete: function(data,status) { //optional, used for debugging purposes
-                alert(status);
-            }
 
-            });//ajax
+            });
         }
         function validateUsername() {
-            alert("in validateUsernameyea: " + $('#username').val());
+            //alert("in validateUsernameyea: " + $('#username').val());
             
             $.ajax({
                 type: "get",
