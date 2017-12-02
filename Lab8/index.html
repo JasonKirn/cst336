@@ -1,0 +1,135 @@
+
+<html>
+    
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script>
+    //NOTE: username is jasonkirn
+    //      pass is himjim2
+    //      for testing purposes
+        function getCityInfo() {
+        //use zip 93955
+             $.ajax({
+                type: "GET",
+                //url: "http://hosting.otterlabs.org/laramiguel/ajax/zip.php",
+                url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                dataType: "json",
+                data: {
+                    "zip": $("#zip").val()
+                },
+                success: function(data,status) {
+                    //Error message for zip code not found
+                    if (data.zip == undefined) {
+                            console.log("undefined");
+                            $("#zip").css("background", "#ff9999");
+                            $("#zipError").html("Zip code not found!");
+                    } else if (data.zip != undefined){
+                            console.log("defined");
+                            $("#zipError").hide();
+                            $("#zip").css("background", "#d3f8d3");
+                            $("#city").html(data.city);
+                            $("#latitude").html(data.latitude);
+                            $("#longitude").html(data.longitude);
+                    }
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                    
+                }
+             });
+        }
+        
+        function getCountyInfo() {
+            alert("select state changed. Value: " + $("#stateList").val()); 
+            $.ajax({
+
+            type: "GET",
+            url: "http://hosting.otterlabs.org/laramiguel/ajax/countyList.php?state=ca",
+            dataType: "json",
+            data: { 
+                "state": $("#stateList").val() 
+            },
+            success: function(data,status) {
+                //acts to remove previous appends
+                $("#county-list").html("");
+                for (var i = 0; i < data.counties.length; i++) {
+                    $("#county-list").append("<option>" + data.counties[i].county + "</option>");
+                }
+            },
+            complete: function(data,status) { //optional, used for debugging purposes
+                alert(status);
+            }
+
+            });//ajax
+        }
+        function validateUsername() {
+            alert("in validateUsernameyea: " + $('#username').val());
+            
+            $.ajax({
+                type: "get",
+                url: "http://cst336-jasonkirn.c9users.io/cst336/Lab8/api.php",
+                dataType: "json",
+                data: {
+                    'username': $('#username').val()
+                },
+                success: function(data,status) {
+
+                    if (data == null) {
+                        $('#username-valid').html("Username is available");
+                    } else {
+                        $('#username-valid').html("Username is not available")
+                    }
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                    //alert(data);
+                }
+            });
+        }
+        function samePassword() {
+            if ($('#typed-password').val() != $('#password').val()) {
+                $('#incorrect-pass').html("Retyped password does not currently match original password, please change retyped password");
+            }
+            else {
+                $('#incorrect-pass').html("");
+            }
+        }
+    </script>
+</head>
+
+<body id="dummybodyid">
+   <h1> Sign Up Form </h1>
+    <form>
+        <fieldset>
+           <legend>Sign Up</legend>
+            First Name:  <input type="text"><br> 
+            Last Name:   <input type="text"><br> 
+            Email:       <input type="text"><br> 
+            Phone Number:<input type="text"><br><br>
+            Zip Code:    <input id="zip" onchange="getCityInfo();" type="text">
+            <span id="zipError"></span><br>
+            City:  <span id="city"></span>
+            <br>
+            Latitude: <span id="longitude"></span>
+            <br>
+            Longitude: <span id="latitude"></span>
+            <br><br>
+            State: 
+            <select onchange="getCountyInfo();" id="stateList" name="stateList">
+              <option value="ca">California</option>
+              <option value="nv">Nevada</option>
+              <option value="wa">Washington</option>
+              <option value="or">Oregon</option>
+            </select>
+            Select a County: <select id="county-list"></select><br>
+            
+            Desired Username: <input onchange="validateUsername();" id='username' type="text"> <span id="username-valid"></span><br>
+            Password: <input type="password" id="typed-password"><br>
+            Type Password Again: <input onchange="samePassword();" id='password' type="password"> <span id="incorrect-pass"></span><br>
+            <input type="submit" value="Sign up!">
+        </fieldset>
+    </form>
+</body>
+
+</html>

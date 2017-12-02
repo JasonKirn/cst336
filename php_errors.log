@@ -232,3 +232,18 @@ Stack trace:
 [04-Nov-2017 05:17:15 UTC] PHP Fatal error:  Call to undefined function getUserInfo() in /home/ubuntu/workspace/cst336/Lab6/deleteUser.php on line 50
 [04-Nov-2017 05:17:15 UTC] PHP Stack trace:
 [04-Nov-2017 05:17:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab6/deleteUser.php:0
+[30-Nov-2017 23:05:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'bac85967e1905a'@'localhost' (using password: YES)' in /home/ubuntu/workspace/cst336/Lab8/api.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/Lab8/api.php(9): PDO->__construct('mysql:host=;dbn...', 'bac85967e1905a', '1f5c1b57')
+#1 /home/ubuntu/workspace/cst336/Lab8/api.php(43): getDatabaseConnection()
+#2 /home/ubuntu/workspace/cst336/Lab8/api.php(57): displayUsers()
+#3 {main}
+  thrown in /home/ubuntu/workspace/cst336/Lab8/api.php on line 9
+[01-Dec-2017 00:19:07 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/cst336/Lab8/api.php on line 19
+[01-Dec-2017 00:19:07 UTC] PHP Stack trace:
+[01-Dec-2017 00:19:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab8/api.php:0
+[01-Dec-2017 00:19:07 UTC] PHP   2. log() /home/ubuntu/workspace/cst336/Lab8/api.php:19
+[01-Dec-2017 00:19:14 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/cst336/Lab8/api.php on line 19
+[01-Dec-2017 00:19:14 UTC] PHP Stack trace:
+[01-Dec-2017 00:19:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/Lab8/api.php:0
+[01-Dec-2017 00:19:14 UTC] PHP   2. log() /home/ubuntu/workspace/cst336/Lab8/api.php:19
