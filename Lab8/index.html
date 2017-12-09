@@ -88,11 +88,23 @@
             });
         }
         function samePassword() {
-            if ($('#typed-password').val() != $('#password').val()) {
+            //This works, but we're doing click sign up method as well to experiment
+            /*if ($('#typed-password').val() != $('#password').val()) {
                 $('#incorrect-pass').html("Retyped password does not currently match original password, please change retyped password");
             }
             else {
                 $('#incorrect-pass').html("");
+            }*/
+        }
+        function validatePassword() {
+            //alert("In validate password");
+            console.log("we in there");
+            if ($("#typed-password").val() != $("#password").val()) {
+                console.log("we also in here tho");
+                debugger;
+            }
+            if (($("#typed-password".length < 8) || ($("#password".length < 8)))) {
+                console.log("One of the passwords are under 8");
             }
         }
     </script>
@@ -100,7 +112,8 @@
 
 <body id="dummybodyid">
    <h1> Sign Up Form </h1>
-    <form>
+   <!-- normal setup uses just form block -->
+    <form onsubmit="validatePassword();return false;">
         <fieldset>
            <legend>Sign Up</legend>
             First Name:  <input type="text"><br> 
@@ -125,7 +138,7 @@
             Select a County: <select id="county-list"></select><br>
             
             Desired Username: <input onchange="validateUsername();" id='username' type="text"> <span id="username-valid"></span><br>
-            Password: <input type="password" id="typed-password"><br>
+            Password: <input type="password" id="typed-password"><span id="password-valid"></span><br>
             Type Password Again: <input onchange="samePassword();" id='password' type="password"> <span id="incorrect-pass"></span><br>
             <input type="submit" value="Sign up!">
         </fieldset>
